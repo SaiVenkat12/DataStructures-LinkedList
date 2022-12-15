@@ -73,6 +73,7 @@ namespace LinkedListDS
                     Console.WriteLine("position out of range");
                 }
             }
+            Console.WriteLine(id + " Value inserted in position " + position);
             return head;
         }
     }
