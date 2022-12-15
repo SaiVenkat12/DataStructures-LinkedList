@@ -76,5 +76,16 @@ namespace LinkedListDS
             Console.WriteLine(id + " Value inserted in position " + position);
             return head;
         }
+        public node RemoveFirst()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("List doesn't exist");
+                return null;
+            }
+            Console.WriteLine("Value {0} is Deleted", this.head.id);
+            this.head = this.head.next;
+            return this.head;
+        }
     }
 }

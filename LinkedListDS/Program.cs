@@ -13,6 +13,8 @@ namespace LinkedListDS
             LinkedList.InsertAtParticularPoistion(2, 30);
             
             LinkedList.Display();
+            LinkedList.RemoveFirst();
+            LinkedList.Display();
 
         }
     }
