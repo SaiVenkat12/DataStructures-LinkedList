@@ -43,5 +43,37 @@ namespace LinkedListDS
                 temp = temp.next;
             }
         }
+        public node InsertAtParticularPoistion(int position, int id)
+        {
+            if (position < 1)
+            {
+                Console.WriteLine("Invalid Poistion");
+            }
+            else if (position == 1)
+            {
+                var newNode = new node(id);
+                newNode.next = this.head;
+                head = newNode;
+            }
+            else
+            {
+                while (position-- != 0)
+                {
+                    if (position == 1)
+                    {
+                        node node = new node(id);
+                        node.next = this.head.next;
+                        head.next = node;
+                        break;
+                    }
+                    head = head.next;
+                }
+                if (position != 1)
+                {
+                    Console.WriteLine("position out of range");
+                }
+            }
+            return head;
+        }
     }
 }
