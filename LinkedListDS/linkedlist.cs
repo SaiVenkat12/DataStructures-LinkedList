@@ -23,11 +23,25 @@ namespace LinkedListDS
                 while (temp.next != null)
                 {
                     temp = temp.next;
-                    temp.next = Node;
                 }
+                temp.next = Node;
 
             }
             Console.WriteLine("{0} is inserted into the Linked List ", Node.id);
+        }
+        public void Display()
+        {
+            node temp = this.head;
+            if (temp == null)
+            {
+                Console.WriteLine("Linked List is empty");
+                return;
+            }
+            while (temp != null)
+            {
+                Console.WriteLine(temp.id + " ");
+                temp = temp.next;
+            }
         }
     }
 }
