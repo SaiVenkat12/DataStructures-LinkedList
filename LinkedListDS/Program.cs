@@ -6,9 +6,9 @@ namespace LinkedListDS
         public static void Main(string[] args)
         {
             linkedlist LinkedList = new linkedlist();
-            LinkedList.Add(56);
-            LinkedList.Add(30);
-            LinkedList.Add(70);
+            LinkedList.Append(56);
+            LinkedList.Append(30);
+            LinkedList.Append(70);
             LinkedList.Display();
         }
     }

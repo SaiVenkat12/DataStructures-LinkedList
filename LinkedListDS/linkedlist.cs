@@ -10,7 +10,7 @@ namespace LinkedListDS
     internal class linkedlist
     {
         internal node head;
-        public void Add(int id)
+        public void Append(int id)
         {
             node Node = new node(id);
             if (this.head == null)
