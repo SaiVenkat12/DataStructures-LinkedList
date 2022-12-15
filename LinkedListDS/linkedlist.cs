@@ -87,5 +87,20 @@ namespace LinkedListDS
             this.head = this.head.next;
             return this.head;
         }
+        public node RemoveLast()
+        {
+            if (head == null)
+                return null;
+            if (head.next == null)
+                return null;
+            node NewNode = head;
+            while (NewNode.next.next != null)
+            {
+                NewNode = NewNode.next;
+            }
+            Console.WriteLine("Last Value Deleted");
+            NewNode.next = null;
+            return head;
+        }
     }
 }

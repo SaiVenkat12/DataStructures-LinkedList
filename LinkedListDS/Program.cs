@@ -13,7 +13,9 @@ namespace LinkedListDS
             LinkedList.InsertAtParticularPoistion(2, 30);
             
             LinkedList.Display();
-            LinkedList.RemoveFirst();
+            //LinkedList.RemoveFirst();
+            //LinkedList.Display();
+            LinkedList.RemoveLast();
             LinkedList.Display();
 
         }
